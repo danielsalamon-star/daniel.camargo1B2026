@@ -1,187 +1,143 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-body{
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo do Futebol</title>
 
-font-family:Arial, Helvetica, sans-serif;
+    <link rel="stylesheet" href="style.css">
+</head>
 
-background:#eef7ee;
+<body>
 
-color:#222;
+<header>
+    <h1>⚽ Universo do Futebol</h1>
+    <p>O esporte que une milhões de pessoas.</p>
+</header>
 
-line-height:1.7;
+<nav>
+    <a href="#historia">História</a>
+    <a href="#importancia">Importância</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#brasil">Brasil</a>
+</nav>
 
-transition:0.4s;
+<main>
 
-}
+<section id="historia">
 
-header{
+<article>
 
-background:#2e7d32;
+<h2>História do Futebol</h2>
 
-color:white;
+<p>
+O futebol surgiu oficialmente na Inglaterra em 1863 e rapidamente se tornou o esporte
+mais popular do planeta. Atualmente, bilhões de pessoas acompanham campeonatos nacionais,
+continentais e a Copa do Mundo.
+</p>
 
-padding:30px;
+<p>
+Sua simplicidade explica parte do sucesso: basta uma bola e um espaço para jogar.
+Essa facilidade fez com que o esporte se espalhasse por todos os continentes.
+</p>
 
-text-align:center;
+</article>
 
-}
+</section>
 
-nav{
+<section id="importancia">
 
-margin-top:20px;
+<article>
 
-}
+<h2>Por que o futebol é importante?</h2>
 
-nav a{
+<p>
+O futebol vai muito além do entretenimento. Ele promove saúde, trabalho em equipe,
+disciplina, respeito às regras e inclusão social. Diversos projetos utilizam o esporte
+para afastar jovens da violência e incentivar a educação.
+</p>
 
-text-decoration:none;
+</article>
 
-color:white;
+<aside>
 
-margin:15px;
+<h3>Você sabia?</h3>
 
-font-weight:bold;
+<p>
+Mais de 3,5 bilhões de pessoas acompanham o futebol em todo o mundo.
+</p>
 
-transition:.3s;
+</aside>
 
-}
+</section>
 
-nav a:hover{
+<section id="curiosidades">
 
-color:yellow;
+<h2>Curiosidades</h2>
 
-}
+<details>
 
-main{
+<summary>Maior campeão da Copa do Mundo</summary>
 
-max-width:1000px;
+<p>
+O Brasil é o maior campeão mundial, com cinco títulos.
+</p>
 
-margin:auto;
+</details>
 
-padding:30px;
+<details>
 
-}
+<summary>Qual é o torneio mais assistido?</summary>
 
-section,article,aside{
+<p>
+A Copa do Mundo da FIFA é um dos eventos esportivos mais assistidos do planeta.
+</p>
 
-background:white;
+</details>
 
-padding:25px;
+<details>
 
-margin:25px 0;
+<summary>Velocidade da bola</summary>
 
-border-radius:15px;
+<p>
+Em cobranças de falta e chutes fortes, a bola pode ultrapassar 120 km/h.
+</p>
 
-box-shadow:0 4px 10px rgba(0,0,0,.15);
+</details>
 
-}
+</section>
 
-h2{
+<section id="brasil">
 
-color:#2e7d32;
+<article>
 
-margin-bottom:15px;
+<h2>O Futebol no Brasil</h2>
 
-}
+<p>
+O futebol faz parte da identidade brasileira. Grandes clubes, jogadores históricos
+e uma torcida apaixonada transformaram o esporte em uma importante manifestação cultural.
 
-table{
+Além da competição, o futebol movimenta a economia, gera empregos e inspira milhões
+de crianças a praticarem esportes.
+</p>
 
-width:100%;
+</article>
 
-border-collapse:collapse;
+</section>
 
-margin-top:20px;
+</main>
 
-}
+<footer>
 
-table th{
+<p>Desenvolvido por: Seu Nome</p>
 
-background:#2e7d32;
+<button onclick="voltarTopo()">⬆ Voltar ao topo</button>
 
-color:white;
+</footer>
 
-padding:12px;
+<script src="script.js"></script>
 
-}
+</body>
 
-table td{
-
-border:1px solid #ccc;
-
-padding:12px;
-
-text-align:center;
-
-}
-
-button{
-
-background:#2e7d32;
-
-color:white;
-
-border:none;
-
-padding:12px 20px;
-
-margin-top:15px;
-
-border-radius:10px;
-
-cursor:pointer;
-
-font-size:16px;
-
-transition:.3s;
-
-}
-
-button:hover{
-
-background:#1b5e20;
-
-transform:scale(1.05);
-
-}
-
-footer{
-
-background:#222;
-
-color:white;
-
-text-align:center;
-
-padding:20px;
-
-margin-top:40px;
-
-}
-
-.dark{
-
-background:#111;
-
-color:white;
-
-}
-
-.dark section,
-.dark article,
-.dark aside{
-
-background:#222;
-
-color:white;
-
-}
-
-.dark h2{
-
-color:#7CFC00;
-
-}
+</html>
