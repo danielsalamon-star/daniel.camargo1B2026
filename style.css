@@ -1,143 +1,105 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo do Futebol</title>
+body{
+    background:#e8f5e9;
+    color:#222;
+    line-height:1.7;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+header{
+    background:linear-gradient(90deg,#006400,#00a651);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
 
-<body>
+nav{
+    background:#003b1f;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:15px;
+}
 
-<header>
-    <h1>⚽ Universo do Futebol</h1>
-    <p>O esporte que une milhões de pessoas.</p>
-</header>
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
 
-<nav>
-    <a href="#historia">História</a>
-    <a href="#importancia">Importância</a>
-    <a href="#curiosidades">Curiosidades</a>
-    <a href="#brasil">Brasil</a>
-</nav>
+nav a:hover{
+    color:yellow;
+}
 
-<main>
+main{
+    width:85%;
+    margin:auto;
+    padding:30px;
+}
 
-<section id="historia">
+section{
+    background:white;
+    margin-bottom:30px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
 
-<article>
+h2{
+    color:#006400;
+    margin-bottom:15px;
+}
 
-<h2>História do Futebol</h2>
+aside{
+    margin-top:20px;
+    background:#d9ffd9;
+    border-left:6px solid green;
+    padding:15px;
+    border-radius:8px;
+}
 
-<p>
-O futebol surgiu oficialmente na Inglaterra em 1863 e rapidamente se tornou o esporte
-mais popular do planeta. Atualmente, bilhões de pessoas acompanham campeonatos nacionais,
-continentais e a Copa do Mundo.
-</p>
+details{
+    margin:15px 0;
+    padding:12px;
+    background:#f5f5f5;
+    border-radius:10px;
+    cursor:pointer;
+}
 
-<p>
-Sua simplicidade explica parte do sucesso: basta uma bola e um espaço para jogar.
-Essa facilidade fez com que o esporte se espalhasse por todos os continentes.
-</p>
+summary{
+    font-weight:bold;
+}
 
-</article>
+footer{
+    text-align:center;
+    background:#003b1f;
+    color:white;
+    padding:25px;
+}
 
-</section>
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:green;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
 
-<section id="importancia">
+button:hover{
+    background:#00a651;
+    transform:scale(1.08);
+}
 
-<article>
-
-<h2>Por que o futebol é importante?</h2>
-
-<p>
-O futebol vai muito além do entretenimento. Ele promove saúde, trabalho em equipe,
-disciplina, respeito às regras e inclusão social. Diversos projetos utilizam o esporte
-para afastar jovens da violência e incentivar a educação.
-</p>
-
-</article>
-
-<aside>
-
-<h3>Você sabia?</h3>
-
-<p>
-Mais de 3,5 bilhões de pessoas acompanham o futebol em todo o mundo.
-</p>
-
-</aside>
-
-</section>
-
-<section id="curiosidades">
-
-<h2>Curiosidades</h2>
-
-<details>
-
-<summary>Maior campeão da Copa do Mundo</summary>
-
-<p>
-O Brasil é o maior campeão mundial, com cinco títulos.
-</p>
-
-</details>
-
-<details>
-
-<summary>Qual é o torneio mais assistido?</summary>
-
-<p>
-A Copa do Mundo da FIFA é um dos eventos esportivos mais assistidos do planeta.
-</p>
-
-</details>
-
-<details>
-
-<summary>Velocidade da bola</summary>
-
-<p>
-Em cobranças de falta e chutes fortes, a bola pode ultrapassar 120 km/h.
-</p>
-
-</details>
-
-</section>
-
-<section id="brasil">
-
-<article>
-
-<h2>O Futebol no Brasil</h2>
-
-<p>
-O futebol faz parte da identidade brasileira. Grandes clubes, jogadores históricos
-e uma torcida apaixonada transformaram o esporte em uma importante manifestação cultural.
-
-Além da competição, o futebol movimenta a economia, gera empregos e inspira milhões
-de crianças a praticarem esportes.
-</p>
-
-</article>
-
-</section>
-
-</main>
-
-<footer>
-
-<p>Desenvolvido por: Seu Nome</p>
-
-<button onclick="voltarTopo()">⬆ Voltar ao topo</button>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+section:hover{
+    transform:translateY(-4px);
+    transition:.3s;
+}
