@@ -1,16 +1,20 @@
-let curtidas = 0;
-
-function curtir(){
-
-curtidas++;
-
-document.getElementById("contador").innerHTML =
-"Curtidas: " + curtidas;
-
+function voltarTopo(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 }
 
-function modoEscuro(){
+const titulos = document.querySelectorAll("h2");
 
-document.body.classList.toggle("dark");
+titulos.forEach(function(titulo){
 
-}
+    titulo.addEventListener("mouseover",function(){
+        titulo.style.color="#ff9800";
+    });
+
+    titulo.addEventListener("mouseout",function(){
+        titulo.style.color="#006400";
+    });
+
+});
